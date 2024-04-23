@@ -1,0 +1,33 @@
+/* If you need to add @import statements, do so up here */
+
+@import "jit-refresh.css"; /* triggers frontend rebuilds */
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+/* Set up Tailwind imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+
+:root {
+  --body-background: #05011e;
+  --body-color: #fff;
+  --heading-color: black;
+  --action-color: #d64045;
+}
+
+body {
+  background: var(--body-background);
+  color: var(--body-color);
+  font-family: "Kode Mono", BlinkMacSystemFont, -apple-system, sans-serif;
+}
+
+.stylized {
+  filter: brightness(200%) saturate(15) contrast(1.5) grayscale(1);
+  mix-blend-mode: color-dodge;
+}
+
+p {
+  line-height: 1rem;
+}
