@@ -4,7 +4,7 @@ layout: default
 
 <h1 class="text-2xl font-bold">{{ data.title }}</h1>
 <span class="mb-4">{{ data.date}}</span>
-
+<div style="background-image: url('/images/{{ data.img }}')" class="block w-full my-6 bg-center bg-cover aspect-video stylized clip-path"></div>
 <div class="flex flex-col gap-4">
   {{ content }}
 </div

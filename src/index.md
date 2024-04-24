@@ -7,9 +7,9 @@ layout: default
 <ul class="flex flex-col gap-4">
   {% for post in collections.posts.resources %}
    <li>
-      <a class="flex flex-col sm:flex-row gap-4 border border-1 rounded-sm overflow-hidden" href="{{ post.relative_url }}">
-        <img class="w-full stylized inline-block sm:max-w-40 aspect-square" src="images/{{post.data.img}}">
-        <div class="flex flex-col gap-4 p-4 justify-center">
+      <a class="flex flex-col gap-4 overflow-hidden rounded-md bg-dark-purple-300 sm:flex-row" href="{{ post.relative_url }}">
+        <div class="w-full bg-center bg-cover stylized aspect-square " style="background-image: url('images/{{post.data.img}}')"></div>
+        <div class="flex flex-col justify-center gap-4 p-4">
           <h2 class="text-xl font-bold">
             {{ post.data.title }}
           </h2>
