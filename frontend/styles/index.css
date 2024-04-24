@@ -24,8 +24,9 @@ body {
 }
 
 .stylized {
-  filter: brightness(200%) saturate(15) contrast(1.5) grayscale(1);
+  filter: brightness(170%) saturate(15) contrast(1.5) grayscale(1);
   mix-blend-mode: color-dodge;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
 p {
