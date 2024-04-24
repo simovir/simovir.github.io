@@ -7,7 +7,9 @@ img: lion.jpg
 categories: updates
 ---
 
-<img class="stylized" src="{% asset_path images/{{ data.img }}%}"/>
+<img class="stylized" src="/images/lion.JPG"/>
+
+![Blue Marble](<%= resized_image_path("images/blue-marble.jpg", width: 1024) %>)
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `bin/bridgetown start`, which launches a web server and auto-regenerates your site when a file is updated.
 
