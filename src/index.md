@@ -4,6 +4,12 @@
 layout: default
 ---
 
+Hey! I got bridgetown and GH pages set up, so I can start posting stuff here soon.
+
+Come back later!
+
+--Simo
+
 <ul class="flex flex-wrap gap-4">
   {% for post in collections.posts.resources %}
    <li class="max-w-full border rounded-md border-1 border-color-white sm:max-w-xs list-item">
@@ -20,6 +26,5 @@ layout: default
         </div>
       </a>
     </li>
-    
   {% endfor %}
 </ul>
