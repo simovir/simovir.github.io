@@ -46,13 +46,7 @@ p a {
 }
 
 .list-item:hover a {
-  background-color: hsl(251, 28%, 15%);
+  background-color: hsl(0, 2%, 9%);
   transition: background-color 300ms; 
 }
-.list-item .stylized {
-  transition: filter 300ms;
-}
-.list-item:hover .stylized {
-  filter: brightness(120%) saturate(5) contrast(1.2) grayscale(1);
-  transition: filter 300ms;
-}
+
