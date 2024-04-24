@@ -6,7 +6,7 @@
   <body class="{{ data.layout }} {{ data.page_class }} p-2 sm:p-4">
     {% render "navbar", metadata: site.metadata, resource: resource %}
 
-    <main class="md:max-w-3xl mx-auto text-balance py-24">
+    <main class="flex flex-col gap-4 py-24 mx-auto md:max-w-3xl text-balance">
       {{ content }}
     </main>
 
