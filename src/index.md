@@ -11,7 +11,7 @@ layout: default
         <div class="w-full bg-center bg-cover stylized aspect-video" style="background-image: url('images/{{post.data.img}}')"></div>
         <div class="flex flex-col justify-center gap-2 p-4">
           <div>
-            <span class="text-xs">{{ data.date | date: "%d.%m.%Y"}}</span>
+            <span class="text-xs">{{ post.data.date | date: "%d.%m.%Y"}}</span>
             <h2 class="font-bold text-md">
               {{ post.data.title }}
             </h2>
