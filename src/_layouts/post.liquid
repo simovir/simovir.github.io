@@ -2,12 +2,10 @@
 layout: default
 ---
 
-<div>
-  <h1 class="text-2xl font-bold">{{ data.title }}</h1>
+<div style="background-image: url('/images/{{ data.img }}')" class="block w-full my-6 bg-center bg-cover cover-image aspect-video stylized"></div>
+<div class="w-full prose prose-invert prose-zinc textbody max-w-none">
+  <h1 class="text-2xl font-bold heading">{{ data.title }}</h1>
   <span>{{ data.date | date: "%d.%m.%Y"}}</span>
-</div>
-<div style="background-image: url('/images/{{ data.img }}')" class="block w-full my-6 bg-center bg-cover aspect-video stylized clip-path"></div>
-<div class="flex flex-col gap-4">
   {{ content }}
 </div
 

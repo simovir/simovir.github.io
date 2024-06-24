@@ -9,6 +9,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
+@view-transition {
+  navigation: auto;
+}
+
 
 :root {
   --body-background: #05011e;
@@ -18,8 +22,8 @@
 }
 
 body {
-  background: var(--body-background);
   color: var(--body-color);
+  background: var(--body-background);
   font-family: "Kode Mono", BlinkMacSystemFont, -apple-system, sans-serif;
 }
 
@@ -32,6 +36,9 @@ body {
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
+.textbody {
+  view-transition-name: body;
+}
 p {
   line-height: 1.22rem;
 }
@@ -41,8 +48,12 @@ p a {
   text-decoration: underline;
 }
 
+.cover-image {
+  view-transition-name: post-image;
+}
 .list-item a {
   transition: background-color 300ms;
+  view-transition-name: post-image;
 }
 
 .list-item:hover a {
@@ -50,3 +61,18 @@ p a {
   transition: background-color 300ms; 
 }
 
+::view-transition-old(heading) {
+  animation-duration: 300ms;
+}
+
+::view-transition-new(heading) {
+  animation-duration: 300ms;
+}
+
+@media (prefers-reduced-motion) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
