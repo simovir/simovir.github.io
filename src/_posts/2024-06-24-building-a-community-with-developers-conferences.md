@@ -7,7 +7,7 @@ img: ohspeaking.jpg
 category: events
 ---
 
-Organising conferences is fun. It is also horrible. I’ve only done it twice, and after both times, I’ve said, “never again.” Regardless, I’m constantly thinking about how to make the next event happen. Fortunately, I’m not alone. I was dragged into organising developers’ events by [Matias Korhonen](https://randomerrata.net) a few years ago, and since then, I’ve been the co-organiser for two events: the European Ruby Conference [Euruko Helsinki](https://2022.euruko.org) in 2022 and [Oh the Humanity!](https://oh.helsinkiruby.fi) – a human-centered software developers’ conference (aka OH!2023) in 2023.
+Organising conferences is fun. It is also horrible. I’ve only done it twice, and after both times, I’ve said, “never again.” Regardless, I’m constantly thinking about how to make the next event happen. Fortunately, I’m not alone. I was dragged into organising developers’ events by [Matias Korhonen](https://randomerrata.com) a few years ago, and since then, I’ve been the co-organiser for two events: the European Ruby Conference [Euruko Helsinki](https://2022.euruko.org) in 2022 and [Oh the Humanity!](https://oh.helsinkiruby.fi) – a human-centered software developers’ conference (aka OH!2023) in 2023.
 
 One of these events was more successful than the other. Euruko is a long-running traveling conference, having been organised since 2003 with an established audience. OH!2023, however, was a completely new event. Euruko had around 700 attendees, while OH!2023 garnered just a bit over 50.
 
