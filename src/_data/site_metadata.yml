@@ -5,7 +5,7 @@
 # in the templates via {{ site.metadata.myvariable }}.
 
 title: Simo Virtanen
-tagline: Mind droppings
+tagline: Random thoughts and projects
 email: simo@sakeus.fi
 description: >-
   Simo Virtanen is a designer and entrepreneur building new things for web.
