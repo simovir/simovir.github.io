@@ -58,7 +58,7 @@ However, there are some big caveats, which is why we’ve opted to run only sing
 
 This comes down to the opportunity cost. The tickets for the developers’ conferences are usually bought by the employers of the attendees, and having the developers attend a conference means that they’re not working on their usual daily responsibilities. The same applies to the sponsors who have a booth at the event. If you think your event can provide enough value to the attendees to cover multiple days of absence, that’s great!
 
-Another thing you should take into account: on which weekdays is your event held? If you are running a two-day conference that is held on Friday and Saturday, part of the opportunity cost might be mitigated if the attendees are attending on their off-day.
+Another thing you should take into account: on which weekdays is your event held? If you are running a two-day conference that is held on Friday and Saturday, part of the opportunity cost might be mitigated if the attendees are attending on their day off.
 
 ## Keep the program diverse
 
@@ -74,4 +74,4 @@ Having lots of options in a mile-long matrix may seem attractive and make it loo
 
 ## Afterword
 
-While organising a conference is a massive undertaking, it’s also incredibly gratifying. That’s why we’re constantly planning the next one, but for now, we’re just focusing on organising [Ruby Brigade -meetups](https://www.meetup.com/rubybrigade/). Meeting people face to face, especially after the COVID pandemic, can’t be taken for granted, and it’s important that there are venues where you can build support networks and meet like-minded people without the constant need to sell like at tradeshows – and instead just focusing on learning and being a part of a community.
+While organising a conference is a massive undertaking, it’s also incredibly gratifying. That’s why we’re constantly planning the next one, but for now, we’re just focusing on organising [Ruby Brigade -meetups](https://www.meetup.com/rubybrigade/). Meeting people face to face, especially after the COVID pandemic, can’t be taken for granted, and it’s important that there are venues where you can build support networks and meet like-minded people without the constant need to sell like at tradeshows – instead just being able to focus on learning and being a part of a community.
