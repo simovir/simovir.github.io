@@ -3,7 +3,7 @@ layout: post
 title: "Building a community with developers' conferences"
 date: 2024-06-24 13:20:49 +0300
 description: "Organising conferences is fun. It is also horrible. I've only done it twice and after both times I've said 'never again'. Regardless, I'm constantly thinking how to make the next event happen."
-image: ohspeaking.jpg
+image: images/ohspeaking.jpg
 category: events
 ---
 
