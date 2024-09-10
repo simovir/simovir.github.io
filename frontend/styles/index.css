@@ -13,6 +13,15 @@
   navigation: auto;
 }
 
+@font-face {
+  font-family: "Departure Mono";
+  font-weight: 400;
+  src:
+  url(/fonts/DepartureMono-Regular.woff) format("woff"),
+    url(/fonts/DepartureMono-Regular.woff2) format("woff2"),
+    url(/fonts/DepartureMono-Regular.otf) format("opentype");
+}
+
 
 :root {
   --body-background: #05011e;
@@ -24,7 +33,7 @@
 body {
   color: var(--body-color);
   background: var(--body-background);
-  font-family: "Kode Mono", BlinkMacSystemFont, -apple-system, sans-serif;
+  font-family: "Departure Mono", BlinkMacSystemFont, -apple-system, sans-serif;
 }
 
 .stylized {
