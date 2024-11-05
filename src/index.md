@@ -4,19 +4,16 @@
 layout: default
 ---
 
-<ul class="flex flex-wrap gap-4">
+<ul class="grid grid-cols-1 gap-6 sm:grid-cols-2">
   {% for post in collections.posts.resources %}
-   <li class="max-w-full rounded-md sm:max-w-xs list-item">
-      <a class="flex flex-col overflow-hidden rounded-md bg-dark-purple-300 " href="{{ post.relative_url }}">
+   <li class="w-full h-auto list-item">
+      <a class="inline-flex flex-col w-full h-full overflow-hidden grow" href="{{ post.relative_url }}">
         <div class="w-full bg-center bg-cover aspect-video cover-image {{post.class}}" style="background-image: url('{{post.data.image}}'); view-transition-name: post-image-{{post.data.id}}"></div>
-        <div class="flex flex-col justify-center gap-2 p-4">
-          <div>
+        <div class="flex flex-col justify-start h-full gap-2 p-4">
             <span class="text-xs">{{ post.data.date | date: "%d.%m.%Y"}}</span>
-            <h2 class="font-bold text-md heading">
+            <h2 class="font-bold text-md min-h-2 heading">
               {{ post.data.title }}
             </h2>
-          </div>
-          <p class="text-sm text-balance line-clamp-2 body"> {{ post.data.description }}</p>
         </div>
       </a>
     </li>

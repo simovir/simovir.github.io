@@ -6,10 +6,7 @@ module.exports = {
   ],
   theme: {
   colors: {
-    'dark-purple' : {
-      300: '#0b0530',
-      700: '#05011e', 
-  }}, 
+   }, 
     extend: {},
   },
   plugins: [

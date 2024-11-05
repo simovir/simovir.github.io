@@ -24,7 +24,7 @@
 
 
 :root {
-  --body-background: #05011e;
+  --body-background: #222222;
   --body-color: #fff;
   --heading-color: black;
   --action-color: #d64045;
@@ -60,8 +60,9 @@ p a {
 }
 
 .list-item:hover a {
-  background-color: hsl(0, 2%, 9%);
+  background-color: hsl(0, 0%, 40%);
   transition: background-color 300ms; 
+  filter: brightness(120%) saturate(15) contrast(1.5) grayscale(1);
 }
 
 
