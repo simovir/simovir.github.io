@@ -54,9 +54,7 @@ p a {
   text-decoration: underline;
 }
 
-.cover-image {
-  view-transition-name: post-image;
-}
+
 .list-item a {
   transition: background-color 300ms;
 }

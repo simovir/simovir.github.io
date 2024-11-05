@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div style="background-image: url('{{ data.image }}')" class="block w-full my-6 bg-center bg-cover cover-image aspect-video {{data.class}}"></div>
+<div style="background-image: url('{{ data.image }}'); view-transition-name: post-image-{{data.id}}" class="block w-full my-6 bg-center bg-cover cover-image aspect-video {{data.class}}"></div>
 <div class="w-full prose prose-invert prose-zinc max-w-none">
   <h1 class="text-2xl font-bold heading">{{ data.title }}</h1>
   <span>{{ data.date | date: "%d.%m.%Y"}}</span>
