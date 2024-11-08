@@ -4,7 +4,7 @@ id: 2
 title: "Design is not just a phase!"
 date: 2024-11-05 15:30:49 +0300
 description: "We've sent your designs to the developers, we'll call you when it's done!"
-image: /images/design_phase.png
+image: /images/design_phase.jpg
 category: design
 ---
 
