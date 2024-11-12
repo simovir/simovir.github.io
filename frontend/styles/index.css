@@ -40,21 +40,48 @@ body {
 	mix-blend-mode: hard-light;
 }
 
+.nav {
+	font-size: 16.5px;
+}
+
 .clip-path {
 	clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
-h1 {
+.title-lg {
 	font-size: 22px;
+	letter-spacing: normal;
+	line-height: normal;
+	font-weight: 400;
+}
+
+.title-xl {
+	font-size: 55px;
+	letter-spacing: -5px;
+	line-height: normal;
+	font-weight: 400;
 }
 
 p {
 	font-size: 16.5px;
 }
 
+li {
+	font-size: 16.5px;
+}
+
+.date {
+	font-size: 22px;
+}
+
+.date-xs {
+	font-size: 14px;
+}
+
 p a {
 	color: rgb(251, 41, 251);
 	text-decoration: underline;
+	font-weight: 400;
 }
 
 .list-item a {
