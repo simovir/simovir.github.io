@@ -1,75 +1,76 @@
 /* If you need to add @import statements, do so up here */
 
 @import "jit-refresh.css"; /* triggers frontend rebuilds */
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 /* Set up Tailwind imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
 
 @view-transition {
-  navigation: auto;
+	navigation: auto;
 }
 
 @font-face {
-  font-family: "Departure Mono";
-  font-weight: 400;
-  src:
-  url(/fonts/DepartureMono-Regular.woff) format("woff"),
-    url(/fonts/DepartureMono-Regular.woff2) format("woff2"),
-    url(/fonts/DepartureMono-Regular.otf) format("opentype");
+	font-family: "Departure Mono";
+	font-weight: 400;
+	src: url(/fonts/DepartureMono-Regular.woff) format("woff"),
+		url(/fonts/DepartureMono-Regular.woff2) format("woff2"),
+		url(/fonts/DepartureMono-Regular.otf) format("opentype");
 }
 
-
 :root {
-  --body-background: #222222;
-  --body-color: #fff;
-  --heading-color: black;
-  --action-color: #d64045;
+	--body-background: #0b0b0b;
+	--body-color: #fff;
+	--heading-color: black;
+	--action-color: #d64045;
 }
 
 body {
-  color: var(--body-color);
-  background: var(--body-background);
-  font-family: "Departure Mono", BlinkMacSystemFont, -apple-system, sans-serif;
+	color: var(--body-color);
+	background: var(--body-background);
+	font-family: "Departure Mono", BlinkMacSystemFont, -apple-system, sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 .stylized {
-  filter: brightness(170%) saturate(15) contrast(1.5) grayscale(1);
-  mix-blend-mode: color-dodge;
+	filter: brightness(170%) saturate(15) contrast(1.5) grayscale(1);
+	mix-blend-mode: hard-light;
 }
 
 .clip-path {
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+	clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+h1 {
+	font-size: 22px;
 }
 
 p {
-  line-height: 1.22rem;
+	font-size: 16.5px;
 }
 
 p a {
-  color: rgb(251, 41, 251);
-  text-decoration: underline;
+	color: rgb(251, 41, 251);
+	text-decoration: underline;
 }
 
-
 .list-item a {
-  transition: background-color 300ms;
+	transition: background-color 300ms;
 }
 
 .list-item:hover a {
-  background-color: hsl(0, 0%, 40%);
-  transition: background-color 300ms; 
-  filter: brightness(120%) saturate(15) contrast(1.5) grayscale(1);
+	background-color: hsl(0, 0%, 40%);
+	transition: background-color 300ms;
+	filter: brightness(120%) saturate(15) contrast(1.5) grayscale(1);
 }
 
-
 @media (prefers-reduced-motion) {
-  ::view-transition-group(*),
-  ::view-transition-old(*),
-  ::view-transition-new(*) {
-    animation: none !important;
-  }
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
 }

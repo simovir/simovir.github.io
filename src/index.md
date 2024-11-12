@@ -11,7 +11,7 @@ layout: default
         <div class="w-full bg-center bg-cover aspect-video cover-image {{post.class}}" style="background-image: url('{{post.data.image}}'); view-transition-name: post-image-{{post.data.id}}"></div>
         <div class="flex flex-col justify-start h-full gap-2 p-4">
             <span class="text-xs">{{ post.data.date | date: "%d.%m.%Y"}}</span>
-            <h2 class="font-bold text-md min-h-2 heading">
+            <h2 class="">
               {{ post.data.title }}
             </h2>
         </div>
