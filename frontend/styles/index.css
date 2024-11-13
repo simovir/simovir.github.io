@@ -66,6 +66,11 @@ p {
 	font-size: 16.5px;
 }
 
+.prose h2 {
+	font-size: 22px;
+	font-weight: 400;
+}
+
 li {
 	font-size: 16.5px;
 }
