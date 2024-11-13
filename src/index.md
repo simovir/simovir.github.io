@@ -4,7 +4,7 @@
 layout: default
 ---
 
-<ul class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+<ul class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2">
   {% for post in collections.posts.resources %}
    <li class="w-full h-auto list-item">
       <a class="inline-flex flex-col w-full h-full overflow-hidden grow" href="{{ post.relative_url }}">
