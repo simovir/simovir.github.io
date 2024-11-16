@@ -36,7 +36,7 @@ So what do we do? I like to think of UX design as playing magic tricks on the us
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="184 104 232 104 232 56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M188.4,192a88,88,0,1,1,1.83-126.23L232,104" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
     </div>
     <div class="flex items-center w-full h-8 pl-3 sm:pl-2  text-xs sm:text-sm overflow-x-auto border border-white rounded-full whitespace-nowrap grow [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-        https://simovirtanen.com/2024/11/16/making-your-user-squeeze-through-a-narrow-tunnel/
+        <script>document.write(window.location.href)</script>
     </div>
     <div class="flex items-center w-5 h-5 ">
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle fill="currentColor" cx="128" cy="128" r="12"/><circle fill="currentColor" cx="128" cy="60" r="12"/><circle fill="currentColor" cx="128" cy="196" r="12"/></svg>
