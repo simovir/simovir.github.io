@@ -5,6 +5,7 @@ title: "Doing the bare minimum ≠ winging it"
 date: 2024-11-13 17:15:00 +0300
 description: "Just do the bare minimum! What do you care?"
 image: /images/bare_minimum.jpg
+bluesky_uri: https://bsky.app/profile/simovirtanen.com/post/3lato5gwcz22x
 ---
 
 As business owners often do, I've been involved in price negotiations with my clients where I've heard some inventive arguments. One I recently heard was that we should be flexible with our pricing since they are also being flexible by asking us to "do just the bare minimum". This argument rose when talking about our work estimates being just that – estimates, not promises of the final price.

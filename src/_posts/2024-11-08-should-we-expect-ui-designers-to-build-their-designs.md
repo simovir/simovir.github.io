@@ -5,6 +5,7 @@ title: "Should we expect UI designers to build their designs?"
 date: 2024-11-08 13:20:49 +0300
 description: "I bet Michelangelo knew how marble behaves before he started carving David. Should we expect this from pixel pushers?"
 image: /images/david.jpg
+bluesky_uri: https://bsky.app/profile/simovirtanen.com/post/3lagy55jexp25
 ---
 
 Whenever I'm discussing the topic of the skillset that UI designers should possess, I tend to use the analogy "I bet Michelangelo knew how marble behaves before he started carving David". While UI development is a very complex field, I'm always a bit baffled when I meet a UI designer who has never written a line of code of any kind, or even more bafflingly, doesn't know CSS. But I recognise these are my own biases, because I've carved my way into the industry with, what I think, is a pretty basic knowledge of writing HTML and CSS and an adventurous mindset that has led me to poke my forks into the codebase (often to the chagrin of the devs).

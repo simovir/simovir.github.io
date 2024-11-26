@@ -6,6 +6,7 @@ date: 2024-11-05 15:30:49 +0300
 description: "We've sent your designs to the developers, we'll call you when it's done!"
 image: /images/design_phase.jpg
 category: design
+bluesky_uri: https://bsky.app/profile/simovirtanen.com/post/3lbc2ge23vs2t
 ---
 
 One thing I hear quite often is that companies are currently in the "design phase" of their new software project. Yesterday was one of those times. In this stage a company has hired a designer to help them map the user journey, create a service design concept and design the UI for their new product and they'll ask for a quote when they're ready to start the development.

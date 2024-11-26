@@ -5,6 +5,7 @@ title: "Making your user squeeze through a narrow tunnel"
 date: 2024-11-16 10:35:49 +0300
 description: "Completely frictionless isn't always the best solution. Throwing some obstacles in the way can make things feel almost instantanious."
 image: "/images/ape.jpg"
+bluesky_uri: https://bsky.app/profile/simovirtanen.com/post/3lb2jajrgc22f
 ---
 
 When playing video games, you've probably noticed those sections where your character is forced to walk slowly through a long corridor while having chat with someone or where they squeeze through a narrow tunnel. One reason for this is to allow the next section of the game to load. It's a handy way to create a continuous experience for the player.
@@ -25,7 +26,7 @@ So what do we do? I like to think of UX design as playing magic tricks on the us
 - Due to the variance in how long the AI takes to process the request, we didn't want to build auto-redirect to the processed questions so that the user wouldn't stay on the page waiting for the questions to be generated. We'd rather have them work on something else if the process takes long.
 
 <div class="grid w-full grid-cols-1 mt-6 border border-white rounded-lg h-min-content" aria-hidden="true">
-  <div class="flex items-center justify-start w-full gap-2 px-2 py-2 bg-white border-b border-white sm:gap-3">
+  <div class="flex items-center justify-start w-full gap-2 px-2 py-2 border-b border-white bg-white-opacity-50 sm:gap-3">
     <a href="/" class="flex items-center w-5 h-5 pl-1 text-sm">
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="216" y1="128" x2="40" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="112 56 40 128 112 200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
     </a>

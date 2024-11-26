@@ -7,5 +7,57 @@ layout: default
   <span class="date">{{ data.date | date: "%d.%m.%Y"}}</span>
   <h1 class="title-xl">{{ data.title }}</h1>
   <div class="mt-6 prose prose-invert prose-zinc max-w-none">{{ content }}</div>
+  <div id="bluesky-comments" class="mt-16">
+    <div id="bsky-comments-container"></div>
+    <div id="no-comments-message" class="hidden">
+      <h2 class="text-xl font-bold">Comments</h2>
+      <p class="mt-2 text-sm">
+        You can leave a comment on 
+        <a href="{{ data.bluesky_uri }}" 
+           class="underline" 
+           target="_blank" 
+           rel="noreferrer">
+          Bluesky
+        </a>
+      </p>
+    </div>
+  </div>
 </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', async function() {
+    const bskyUrl = "{{ data.bluesky_uri }}";
+    if (bskyUrl) {
+      try {
+        // Convert to AT URI
+        let atUri = bskyUrl;
+        if (bskyUrl.startsWith('https://bsky.app/profile/')) {
+          const parts = bskyUrl.replace('https://bsky.app/profile/', '').split('/');
+          atUri = `at://${parts[0]}/app.bsky.feed.post/${parts[2]}`;
+        }
+
+        // Check thread data first
+        const params = new URLSearchParams({ uri: atUri });
+        const res = await fetch(
+          "https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?" + params.toString(),
+          {
+            method: 'GET',
+            headers: {
+              "Accept": "application/json",
+            }
+          }
+        );
+        const data = await res.json();
+        if (data?.thread?.replies?.length > 0) {
+          initBlueskyComments('bsky-comments-container', atUri);
+        } else {
+          document.getElementById('bsky-comments-container').classList.add('hidden');
+          document.getElementById('no-comments-message').classList.remove('hidden');
+        }
+      } catch (error) {
+        document.getElementById('bsky-comments-container').classList.add('hidden');
+        document.getElementById('no-comments-message').classList.remove('hidden');
+      }
+    }
+  });
+</script>
