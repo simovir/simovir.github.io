@@ -25,36 +25,7 @@ layout: default
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', async function() {
-    try {
-      // Check thread data first using author
-      const params = new URLSearchParams({ author: 'simovirtanen.com' });
-      const res = await fetch(
-        "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?" + params.toString(),
-        {
-          method: 'GET',
-          headers: {
-            "Accept": "application/json",
-          }
-        }
-      );
-      
-      const data = await res.json();
-      console.log('Author feed:', data);
-      
-      if (data?.feed?.length > 0) {
-        // Has posts - show the comments component
-        initBlueskyComments('bsky-comments-container', 'simovirtanen@simovirtanen.com');
-      } else {
-        // No posts - show our custom message
-        document.getElementById('bsky-comments-container').classList.add('hidden');
-        document.getElementById('no-comments-message').classList.remove('hidden');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      // Show error state
-      document.getElementById('bsky-comments-container').classList.add('hidden');
-      document.getElementById('no-comments-message').classList.remove('hidden');
-    }
+  document.addEventListener('DOMContentLoaded', function() {
+    initBlueskyComments('bsky-comments-container', { author: 'simovirtanen.com' });
   });
 </script>
