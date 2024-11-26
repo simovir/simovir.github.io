@@ -25,7 +25,39 @@ layout: default
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    initBlueskyComments('bsky-comments-container', { author: 'simovirtanen.com' });
+  document.addEventListener('DOMContentLoaded', async function() {
+    const bskyUrl = "{{ data.bluesky_uri }}";
+    if (bskyUrl) {
+      try {
+        // Convert to AT URI
+        let atUri = bskyUrl;
+        if (bskyUrl.startsWith('https://bsky.app/profile/')) {
+          const parts = bskyUrl.replace('https://bsky.app/profile/', '').split('/');
+          atUri = `at://${parts[0]}/app.bsky.feed.post/${parts[2]}`;
+        }
+
+        // Check thread data first
+        const params = new URLSearchParams({ uri: atUri });
+        const res = await fetch(
+          "https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?" + params.toString(),
+          {
+            method: 'GET',
+            headers: {
+              "Accept": "application/json",
+            }
+          }
+        );
+        const data = await res.json();
+        if (data?.thread?.replies?.length > 0) {
+          initBlueskyComments('bsky-comments-container', atUri);
+        } else {
+          document.getElementById('bsky-comments-container').classList.add('hidden');
+          document.getElementById('no-comments-message').classList.remove('hidden');
+        }
+      } catch (error) {
+        document.getElementById('bsky-comments-container').classList.add('hidden');
+        document.getElementById('no-comments-message').classList.remove('hidden');
+      }
+    }
   });
 </script>
