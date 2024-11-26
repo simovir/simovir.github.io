@@ -6,6 +6,7 @@ date: 2024-06-24 13:20:49 +0300
 description: "Organising conferences is fun. It is also horrible. I've only done it twice and after both times I've said 'never again'. Regardless, I'm constantly thinking how to make the next event happen."
 image: /images/ohspeaking.jpg
 class: "stylized"
+bluesky_uri: "https://bsky.app/profile/simovirtanen.com/post/3lbupxvouv22a"
 ---
 
 Organising conferences is fun. It is also horrible. I’ve only done it twice, and after both times, I’ve said, “never again.” Regardless, I’m constantly thinking about how to make the next event happen. Fortunately, I’m not alone. I was dragged into organising developers’ events by [Matias Korhonen](https://randomerrata.com) a few years ago, and since then, I’ve been the co-organiser for two events: the European Ruby Conference [Euruko Helsinki](https://2022.euruko.org) in 2022 and [Oh the Humanity!](https://oh.helsinkiruby.fi) – a human-centered software developers’ conference (aka OH!2023) in 2023.
