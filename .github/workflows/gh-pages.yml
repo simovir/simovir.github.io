@@ -5,6 +5,12 @@ on:
     branches:
       - main
 
+# Add these permissions at the top level
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -37,10 +43,6 @@ jobs:
 
   deploy:
     needs: build
-
-    permissions:
-      pages: write
-      id-token: write
 
     environment:
       name: github-pages
