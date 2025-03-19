@@ -5,18 +5,26 @@ on:
     branches:
       - main
 
-# Add these permissions at the top level
+# Update permissions to be more explicit
 permissions:
   contents: read
   pages: write
   id-token: write
+  actions: write # Add this
+  deployments: write # Add this
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # Add concurrency to ensure only one deployment runs at a time
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - uses: actions/checkout@v4
 
