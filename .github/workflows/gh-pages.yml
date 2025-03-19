@@ -19,8 +19,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: "18"
-        #   cache: "yarn"
+          node-version: "16"
+          cache: "yarn"
       - run: yarn install
 
       - name: Build
@@ -29,7 +29,7 @@ jobs:
         run: bin/bridgetown deploy
 
       - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           path: ./output
 

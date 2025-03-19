@@ -7,7 +7,9 @@
 		"esbuild-dev": "node esbuild.config.js --watch"
 	},
 	"devDependencies": {
-		"esbuild": "^0.25.0",
+		"css-loader": "~6.7.1",
+		"esbuild": "~0.25.1",
+		"esbuild-loader": "~4.3.0",
 		"glob": "^10.3.3",
 		"postcss": "^8.4.29",
 		"postcss-flexbugs-fixes": "^5.0.2",
@@ -15,7 +17,10 @@
 		"postcss-load-config": "^4.0.1",
 		"postcss-preset-env": "^9.1.2",
 		"read-cache": "^1.0.0",
-		"tailwindcss": "^3.4.3"
+		"tailwindcss": "^3.4.3",
+		"webpack": "~5.72.0",
+		"webpack-cli": "~4.9.2",
+		"webpack-manifest-plugin": "~5.0.0"
 	},
 	"dependencies": {
 		"@tailwindcss/typography": "^0.5.13",
