@@ -10,6 +10,9 @@ node_modules
 bower_components
 vendor
 
+# Runtime / tmp
+tmp/
+
 # Caches
 .sass-cache
 .npm
