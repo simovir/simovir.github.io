@@ -493,6 +493,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@paper-design/shaders@0.0.82":
+  version "0.0.82"
+  resolved "https://registry.npmjs.org/@paper-design/shaders/-/shaders-0.0.82.tgz"
+  integrity sha512-eCxYQrrCxRVc4KG8sLSQecsq8Ymstbaq/FqZjq/fhOa6UiR1ZZfdMO5IJpHmwL0GYmfzvZVQ4l8ZOLux0uLVdg==
+
 "@tailwindcss/typography@^0.5.13":
   version "0.5.20"
   resolved "https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.5.20.tgz"
