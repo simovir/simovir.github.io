@@ -3,7 +3,7 @@ layout: post
 id: 5
 title: "Making your user squeeze through a narrow tunnel"
 date: 2024-11-16 10:35:49 +0300
-description: "Completely frictionless isn't always the best solution. Throwing some obstacles in the way can make things feel almost instantanious."
+description: "Completely frictionless isn't always the best solution. Throwing some obstacles in the way can make things feel almost instantaneous."
 image: "/images/ape.jpg"
 bluesky_uri: https://bsky.app/profile/simovirtanen.com/post/3lb2jajrgc22f
 ---

@@ -3,18 +3,18 @@ layout: default
 ---
 
 <div style="background-image: image-set(url('{{ data.image | replace: ".jpg", ".avif" }}') type('image/avif'), url('{{ data.image }}') type('image/jpeg')); view-transition-name: post-image-{{data.id}}" class="block w-full bg-center bg-cover cover-image aspect-video {{data.class}}"></div>
-<div class="w-full px-2 mx-auto mt-4 max-w-none md:max-w-3xl sm:px-4">
+<div class="w-full px-4 mx-auto mt-4 max-w-none md:max-w-3xl md:px-0">
   <span class="date">{{ data.date | date: "%d.%m.%Y"}}</span>
   <h1 class="title-xl">{{ data.title }}</h1>
   <div class="mt-6 prose prose-invert prose-zinc max-w-none">{{ content }}</div>
   <div id="bluesky-comments" class="mt-16">
     <div id="bsky-comments-container"></div>
     <div id="no-comments-message" class="hidden">
-      <h2 class="text-xl font-bold">Comments</h2>
-      <p class="mt-2 text-sm">
+      <h2 class="title-lg">Comments</h2>
+      <p class="mt-2">
         You can leave a comment on 
         <a href="{{ data.bluesky_uri }}" 
-           class="underline" 
+           class="text-link" 
            target="_blank" 
            rel="noreferrer">
           Bluesky

@@ -22,8 +22,18 @@
 :root {
 	--body-background: #0b0b0b;
 	--body-color: #fff;
-	--heading-color: black;
-	--action-color: #d64045;
+	--muted-color: #a1a1aa;
+	--accent-color: #fb29fb;
+}
+
+::selection {
+	background: var(--accent-color);
+	color: var(--body-background);
+}
+
+a:focus-visible {
+	outline: 2px solid var(--accent-color);
+	outline-offset: 2px;
 }
 
 body {
@@ -51,13 +61,23 @@ body {
 	letter-spacing: normal;
 	line-height: normal;
 	font-weight: 400;
+	text-wrap: balance;
 }
 
+/* Departure Mono sits on an 11px grid: step sizes, never scale them fluidly. */
 .title-xl {
-	font-size: 55px;
-	letter-spacing: -5px;
+	font-size: 33px;
+	letter-spacing: -3px;
 	line-height: normal;
 	font-weight: 400;
+	text-wrap: balance;
+}
+
+@media (min-width: 768px) {
+	.title-xl {
+		font-size: 55px;
+		letter-spacing: -5px;
+	}
 }
 
 p {
@@ -77,28 +97,65 @@ li {
 	font-size: 22px;
 }
 
-.date-xs {
-	font-size: 14px;
+.muted {
+	color: var(--muted-color);
 }
 
-p a {
-	color: rgb(251, 41, 251);
-	text-decoration: underline;
+.prose {
+	--tw-prose-invert-links: var(--accent-color);
+	--tw-prose-invert-bullets: var(--muted-color);
+	text-wrap: pretty;
+}
+
+.prose a,
+.text-link {
+	color: var(--accent-color);
 	font-weight: 400;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.prose a:hover,
+.text-link:hover {
+	background: var(--accent-color);
+	color: var(--body-background);
+	text-decoration: none;
 }
 
 .list-item a {
-	transition: background-color 300ms, filter 300ms;
-	background-color: rgba(255, 255, 255, 0);
+	background-color: transparent;
+	transition: background-color 150ms;
 }
 
-.list-item:hover a {
-	background-color: rgba(255, 255, 255, 0.03);
-	filter: saturate(5) contrast(1.2) grayscale(0.8);
-	transition: filter 300ms, background-color 300ms;
+/* Dithered cover (frontend/javascript/cover_dither.js), stepped in so it
+   snaps through frames instead of fading. */
+.list-item .cover-image canvas {
+	opacity: 0;
+	transition: opacity 240ms steps(4, end);
+}
+
+.list-item a:hover,
+.list-item a:focus-visible {
+	background-color: rgba(255, 255, 255, 0.06);
+}
+
+.list-item a:hover .cover-image canvas,
+.list-item a:focus-visible .cover-image canvas {
+	opacity: 1;
+}
+
+.list-item a:hover h2,
+.list-item a:focus-visible h2 {
+	text-decoration: underline;
+	text-underline-offset: 4px;
 }
 
 @media (prefers-reduced-motion) {
+	.list-item a,
+	.list-item .cover-image canvas {
+		transition: none;
+	}
+
 	::view-transition-group(*),
 	::view-transition-old(*),
 	::view-transition-new(*) {
