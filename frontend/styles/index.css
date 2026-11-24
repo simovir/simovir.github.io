@@ -1,13 +1,10 @@
 /* If you need to add @import statements, do so up here */
 
 @import "jit-refresh.css"; /* triggers frontend rebuilds */
-@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 /* Set up Tailwind imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
 
 @view-transition {
 	navigation: auto;
@@ -17,9 +14,9 @@
 @font-face {
 	font-family: "Departure Mono";
 	font-weight: 400;
-	src: url(/fonts/DepartureMono-Regular.woff) format("woff"),
-		url(/fonts/DepartureMono-Regular.woff2) format("woff2"),
-		url(/fonts/DepartureMono-Regular.otf) format("opentype");
+	font-display: swap;
+	src: url(/fonts/DepartureMono-Regular.woff2) format("woff2"),
+		url(/fonts/DepartureMono-Regular.woff) format("woff");
 }
 
 :root {
