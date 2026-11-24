@@ -26,7 +26,7 @@ gem "bridgetown", "~> 2.2.2"
 
 # Puma is the Rack-compatible web server used by Bridgetown
 # (you can optionally limit this to the "development" group)
-gem "puma", "< 7"
+gem "puma", "< 8"
 
 # Uncomment to use the Inspectors API to manipulate the output
 # of your HTML or XML resources:
@@ -36,3 +36,5 @@ gem "puma", "< 7"
 # gem "nokolexbor", "~> 0.4"
 
 gem "bridgetown-seo-tag", "~> 7.0"
+
+gem "bridgetown-feed", "~> 4.0"

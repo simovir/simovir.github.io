@@ -42,6 +42,8 @@ GEM
       streamlined (>= 0.6.0)
       tilt (~> 2.0)
       zeitwerk (>= 2.7.3)
+    bridgetown-feed (4.0.0)
+      bridgetown (>= 1.2.0)
     bridgetown-foundation (2.2.2)
       dry-inflector (>= 1.0)
       hash_with_dot_access (~> 2.0)
@@ -111,7 +113,7 @@ GEM
     prism (2.1.0-arm64-darwin)
     prism (2.1.0-x86_64-linux-gnu)
     public_suffix (7.0.5)
-    puma (6.6.1)
+    puma (7.2.3)
       nio4r (~> 2.0)
     rack (3.2.9)
     rackup (2.3.1)
@@ -160,8 +162,9 @@ PLATFORMS
 
 DEPENDENCIES
   bridgetown (~> 2.2.2)
+  bridgetown-feed (~> 4.0)
   bridgetown-seo-tag (~> 7.0)
-  puma (< 7)
+  puma (< 8)
 
 BUNDLED WITH
    2.5.3
